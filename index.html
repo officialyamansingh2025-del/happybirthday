@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Birthday My Chotu</title>
-    <!-- Importing modern minimal fonts and a beautiful cursive font for romance -->
     <link
         href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Outfit:wght@300;400;600&family=Playfair+Display:ital,wght@1,600&display=swap"
         rel="stylesheet">
@@ -520,8 +519,8 @@
         }
 
         /* -------------------------------------
-           NEW: PROFESSIONAL 3D CAKE SCENE
-           ------------------------------------- */
+            NEW: PROFESSIONAL 3D CAKE SCENE
+            ------------------------------------- */
 
         .cake-scene {
             display: none;
@@ -798,7 +797,6 @@
 
 <body>
 
-    <!-- Festive Bunting -->
     <div class="bunting-container">
         <div class="flag" style="--d: 0.1s; --c: #ff4d4d;"></div>
         <div class="flag" style="--d: 0.2s; --c: #ffd700;"></div>
@@ -814,12 +812,10 @@
         <div class="flag" style="--d: 1.2s; --c: #66ccff;"></div>
     </div>
 
-    <!-- Ambient floating particles -->
     <div class="particles" id="particles"></div>
 
     <div class="container">
 
-        <!-- Interactive Gift Reveal Screen -->
         <div class="gift-wrapper" id="giftWrapper" onclick="revealGift()">
             <div class="gift-box">
                 <div class="gift-ribbon-h"></div>
@@ -830,14 +826,10 @@
             <div class="tap-text">Tap to open</div>
         </div>
 
-        <!-- NEW: Professional 3D Cake Scene -->
         <div class="cake-scene" id="cakeScene">
             <h2 class="cake-instruction" id="cakeInstruction">Make a Wish & Tap to Cut!</h2>
 
             <div class="cake-wrapper" id="cakeWrapper" onclick="cutCakeSequence()">
-                <!-- SVG Cake doesn't need external HTML cake plate -->
-
-                <!-- Professional SVG Vector Knife -->
                 <div class="knife-wrapper" id="cakeKnife">
                     <svg viewBox="0 0 40 200" width="40" height="200" xmlns="http://www.w3.org/2000/svg">
                         <defs>
@@ -856,35 +848,26 @@
                             </filter>
                         </defs>
                         <g filter="url(#knifeShadow)">
-                            <!-- Blade -->
                             <path d="M 18 63 L 22 63 L 22 180 Q 20 200 18 190 Z" fill="url(#bladeGrad)" />
-                            <!-- Blade Edge Highlight -->
                             <path d="M 21 63 L 22 63 L 22 180 Q 20 200 21 190 Z" fill="#ffffff" opacity="0.8" />
-                            <!-- Handle -->
                             <rect x="14" y="0" width="12" height="60" fill="url(#handleGrad)" rx="2" />
-                            <!-- Gold guard -->
                             <rect x="12" y="55" width="16" height="8" fill="#d4af37" rx="2" />
-                            <!-- Gold pommel -->
                             <ellipse cx="20" cy="5" rx="7" ry="5" fill="#d4af37" />
                         </g>
                     </svg>
                 </div>
 
-                <!-- 3D Cake Container (Will be cloned into left and right halves by JS for splitting) -->
                 <div class="cake-3d-container" id="cakeContainer">
                     <div class="cake-half left" id="cakeLeft">
-                        <!-- Content injected by JS -->
-                    </div>
+                        </div>
                     <div class="cake-half right" id="cakeRight">
-                        <!-- Content injected by JS -->
-                    </div>
+                        </div>
                 </div>
             </div>
         </div>
 
-        <!-- Hidden Romantic Birthday Card -->
         <div class="glass-card" id="birthdayCard">
-            <img src="aditi.jpg" alt="Our Love" class="card-img">
+            <img src="https://i.ibb.co/h1Cy7k2C/x.jpg" alt="Our Love" class="card-img">
 
             <h1>Happy Birthday, Bhavya!</h1>
             <p class="subtitle">To the absolute love of my life ❤️</p>
@@ -901,7 +884,6 @@
 
     </div>
 
-    <!-- Hidden Deep Emotional Message Modal -->
     <div class="modal-overlay" id="messageModal">
         <div class="modal-content">
             <h2>My Dearest,</h2>
@@ -1134,18 +1116,14 @@
     </filter>
   </defs>
 
-  <!-- Plate -->
   <ellipse cx="100" cy="180" rx="95" ry="20" fill="url(#plateRimGrad)" filter="url(#dropShadow)"/>
   <ellipse cx="100" cy="177" rx="85" ry="16" fill="url(#plateGrad)"/>
   
-  <!-- Shadow under bottom tier -->
   <ellipse cx="100" cy="170" rx="70" ry="18" fill="#501030" opacity="0.6" filter="url(#dropShadow)"/>
   
-  <!-- BOTTOM TIER -->
   <path d="M 30 120 L 30 170 A 70 18 0 0 0 170 170 L 170 120 Z" fill="url(#bottomTierGrad)"/>
   <ellipse cx="100" cy="120" rx="70" ry="18" fill="url(#bottomTierTopGrad)"/>
   
-  <!-- Bottom Icing Detail -->
   <g fill="#ffeaf0" filter="url(#dropShadow)">
     <circle cx="35" cy="170" r="5"/><circle cx="45" cy="174" r="5"/><circle cx="55" cy="177" r="5"/><circle cx="65" cy="180" r="5"/>
     <circle cx="75" cy="182" r="5"/><circle cx="85" cy="183.5" r="5"/><circle cx="95" cy="184.5" r="5"/><circle cx="105" cy="184.5" r="5"/>
@@ -1153,14 +1131,11 @@
     <circle cx="155" cy="174" r="5"/><circle cx="165" cy="170" r="5"/>
   </g>
 
-  <!-- TOP TIER -->
   <path d="M 45 75 L 45 120 A 55 14 0 0 0 155 120 L 155 75 Z" fill="url(#topTierGrad)"/>
   <ellipse cx="100" cy="75" rx="55" ry="14" fill="url(#topTierTopGrad)"/>
 
-  <!-- Drips using exact SVG Path -->
   <path d="M 45 75 A 55 14 0 0 0 155 75 C 155 85, 150 90, 145 80 C 140 105, 135 105, 130 85 C 125 90, 120 110, 115 88 C 110 95, 100 95, 95 85 C 90 100, 80 115, 75 90 C 70 80, 65 105, 60 85 C 55 90, 50 85, 45 75 Z" fill="url(#dripGrad)" filter="url(#dropShadow)"/>
 
-  <!-- Sprinkles -->
   <g stroke-linecap="round" stroke-width="3">
     <line x1="100" y1="65" x2="105" y2="67" stroke="#ff4d4d"/>
     <line x1="80" y1="70" x2="83" y2="75" stroke="#3498db"/>
@@ -1171,13 +1146,11 @@
     <line x1="135" y1="78" x2="132" y2="80" stroke="#e67e22"/>
   </g>
 
-  <!-- CANDLE -->
   <ellipse cx="100" cy="75" rx="10" ry="3" fill="#e0d5d8"/>
   <rect x="94" y="30" width="12" height="45" fill="url(#candleGrad)" rx="2"/>
   <path d="M 94 35 L 106 45 M 94 45 L 106 55 M 94 55 L 106 65 M 94 65 L 106 75" stroke="#ff4d4d" stroke-width="3"/>
   <line x1="100" y1="30" x2="100" y2="24" stroke="#333" stroke-width="2"/>
   
-  <!-- FLAME -->
   <circle cx="100" cy="15" r="15" fill="url(#flameGlow)" class="svg-flame-glow"/>
   <g class="svg-flame">
     <path d="M 100 8 Q 104 18 100 24 Q 96 18 100 8 Z" fill="#ffeb3b"/>
